@@ -2,7 +2,7 @@
 ## Fertilizers Recommendation System For Disease Prediction
 ### Team ID : PNT2022TMID21501
 _Team Leader     : 917719IT038 - Jayasree G_
-###   ###
+
 _Team Member 1   : 917719IT035 - Ishwarya K_
 _Team Member 2   : 917719IT042 - Juhi Padmaja P_
 _Team Member 3   : 917719IT077 - Reshma A_
