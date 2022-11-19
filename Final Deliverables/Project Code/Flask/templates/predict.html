@@ -1,0 +1,175 @@
+<html>
+<head>
+<style>
+
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: silver;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+.topnav-right {
+  float: right;
+}
+
+.margin-text{
+  margin: 70px;
+  text-align: justify;
+}
+
+* {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+
+        }
+
+     
+
+        form {
+            display: block;;
+            height: 85vh;
+            justify-content: left;
+            align-items: left;
+            margin-top: 120px;
+            width: 60%;
+            text-align: left;
+            
+        }
+
+
+        .details h2 {
+            
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+        }
+
+        
+
+        .details h2 {
+            /* margin-bottom: 300px; */
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+
+        }
+
+      
+
+
+        .details h1 {
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(8, 8, 8);
+        }
+
+
+        .upload {
+
+            font-size: 15px;
+            background-color: rgb(255, 252, 252);
+            border-radius: 20px;
+            outline: none;
+            width: 500px;
+            color: rgb(0, 0, 0);
+            border: 3px solid rgb(45, 47, 49);
+
+
+
+        }
+
+        ::-webkit-file-upload-button {
+            color: rgb(255, 252, 252);
+            padding: 20px;
+            border: 2px solid rgb(201, 6, 6);
+            background-color: rgb(201, 6, 6);
+            border-radius: 15px;
+
+        }
+
+        ::-webkit-file-upload-button:hover {
+            border-radius: 20px;
+            border: 2px solid rgb(177, 174, 174);
+
+
+        }
+
+
+
+        input[type="submit"] {
+            margin-top: 80px;
+            margin-right: 30px;
+            padding: 15px 35px;
+            border-radius: 15px;
+            color: black;
+            font-size: 1.5rem;
+            
+        }
+</style>
+</head>
+<body background="{{url_for('static',filename = 'images/Background.jpg')}}">
+<div class="topnav">
+  <a class="active" style = "font-size:25px;font-family: 'Trebuchet MS', sans-serif;" href=#>Plant disease prediction</a>
+   <div class="topnav-right">
+  <a class="active" style = "font-size:20px;font-family: 'Trebuchet MS', sans-serif;" href=/>Home</a>
+  <a style = "font-size:20px;font-family: 'Trebuchet MS', sans-serif;" href=prediction>Prediction</a>
+  </div>
+</div>
+<center>
+	<table style="width:80%;">
+	<tr style="width:60%;  border:">
+	<td style="width:50%; ">
+	<center>
+	<img src="\static\crop.png" width="450" height="300"></center>
+	</td>
+	<td style="width:80%;  ">
+	<form action="/predict" method="post"  enctype="multipart/form-data" onsubmit="showloading()" name='plant'>
+                <label for="cars" style="font-family: 'Trebuchet MS', sans-serif;font-size:20px;">Choose plant type to get the prediction</label><br><br>
+                  <select name="plant" style="border-radius:8px;width:400px;height:30px; background-color: WhiteSmoke;font-family: 'Trebuchet MS', sans-serif;font-size:1vw;" id="plant">
+                    <option value="Fruit">Fruit</option>
+                    <option value="Vegetable">Vegetable</option>
+                    
+                  </select>
+                <br><br><br><br>
+				<label for="cars" style="font-family: 'Trebuchet MS', sans-serif;font-size:20px;">Drop in the image to get the prediction:</label><br>
+                <br>
+				<input type="file" name="image" id='image' class="upload">
+				
+				<br>
+                <input type="submit" style = "background-color:black;color:white;font-family: 'Trebuchet MS', sans-serif;" value="Predict	">
+
+            </form>
+	</td>
+	</tr>
+	</table></center>
+     
+            
+    </section>
+
+</body>
+</html>
