@@ -1,5 +1,5 @@
 # IBM-Project-34619-1660240015
-## Fertilizers Recommendation System For Disease Prediction ## ![Plant](https://user-images.githubusercontent.com/87382215/202835797-307ac2ca-3451-401b-8bdf-0a00e5715929.jpg)
+## Fertilizers Recommendation System For Disease Prediction ## 
 ### Team ID : PNT2022TMID21501
 _Team Leader     : 917719IT038 - Jayasree G_
 
